@@ -1,0 +1,40 @@
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Django files
+*.log
+db.sqlite3
+media/
+staticfiles/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Test and coverage files
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
