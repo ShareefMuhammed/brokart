@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 {% load static %}
 
@@ -8,6 +9,16 @@
     <div class="row">
         {% for product in featured_products %}
         <div class="col-4">
+=======
+ {% load static %}
+ <!-- Featured Categories -->
+    <!-- Featured Products -->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            {% for product in featured_products %}
+            <div class="col-4">
+>>>>>>> 47f48488ab9d220bc453ea1f9bde29fe7ebeac82
             <a href="{% url 'detail_product' product.id   %}"> <img src="{{ product.image.url }}"> </a>
             <h4>{{ product.title }}</h4>
             <div class="rating">
@@ -18,6 +29,7 @@
                 <i class="fa fa-star-o"></i>
             </div>
             <p>${{ product.price }}</p>
+<<<<<<< HEAD
         </div>
   {% endfor %}
     </div>
@@ -25,6 +37,18 @@
     <div class="row">
         {% for product in latest_products %}
         <div class="col-4">
+=======
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Latest Products -->
+        <h2 class="title">Latest Products</h2>
+        
+        <div class="row">
+            {% for product in latest_products %}
+            <div class="col-4">
+>>>>>>> 47f48488ab9d220bc453ea1f9bde29fe7ebeac82
             <a href="{% url 'detail_product' product.id   %}"> <img src="{{ product.image.url }}"> </a>
             <h4>{{ product.title }}</h4>
             <div class="rating">
@@ -35,8 +59,15 @@
                 <i class="fa fa-star-o"></i>
             </div>
             <p>${{ product.price }}</p>
+<<<<<<< HEAD
         </div>
   {% endfor %}
     </div>
 
 </div>
+=======
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+>>>>>>> 47f48488ab9d220bc453ea1f9bde29fe7ebeac82

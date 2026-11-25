@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
 <head>
     <meta charset="UTF-8">
@@ -29,6 +30,36 @@
     {% endblock content %}
     <!-- Brands -->
 
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BROKART | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            {% include 'menu.html' %}   <!-- Include the menu template here -->
+
+            {% block banner %}
+              {% include 'banner_layout.html' %} <!-- Include the banner layout template here -->
+            {% endblock banner %}
+
+        </div>
+    </div> 
+            
+    {% block content %}
+    
+
+   
+    {% endblock content %}
+ 
+>>>>>>> 47f48488ab9d220bc453ea1f9bde29fe7ebeac82
 
     <!-- Footer -->
     <div class="footer">
@@ -36,7 +67,11 @@
             <div class="row">
                 <div class="footer-col-1">
                     <h3>Download Our App</h3>
+<<<<<<< HEAD
                     <p>Download App for Android and ios mobile phone.</p>
+=======
+                    <p>Download App for Android and iOS mobile phone.</p>
+>>>>>>> 47f48488ab9d220bc453ea1f9bde29fe7ebeac82
                     <div class="app-logo">
                         <img src="{% static 'images/play-store.png' %}">
                         <img src="{% static 'images/app-store.png' %}">
@@ -44,8 +79,12 @@
                 </div>
                 <div class="footer-col-2">
                     <img src="{% static 'images/logo-white.png' %}">
+<<<<<<< HEAD
                     <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
                     </p>
+=======
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+>>>>>>> 47f48488ab9d220bc453ea1f9bde29fe7ebeac82
                 </div>
                 <div class="footer-col-3">
                     <h3>Useful Links</h3>
@@ -62,7 +101,11 @@
                         <li>Facebook</li>
                         <li>Twitter</li>
                         <li>Instagram</li>
+<<<<<<< HEAD
                         <li>Youtube</li>
+=======
+                        <li>YouTube</li>
+>>>>>>> 47f48488ab9d220bc453ea1f9bde29fe7ebeac82
                     </ul>
                 </div>
             </div>
@@ -71,6 +114,7 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <!-- javascript -->
 
     <script>
@@ -90,3 +134,26 @@
 </body>
 
 </html>
+=======
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    {% block extra_scripts %}
+    {% endblock extra_scripts %}
+</body>
+</html>
+
+>>>>>>> 47f48488ab9d220bc453ea1f9bde29fe7ebeac82
