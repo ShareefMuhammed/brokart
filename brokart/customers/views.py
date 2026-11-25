@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
 from django.contrib import messages
 from . models import Customer
+
 def sign_out(request):
     logout(request)
     return redirect('home')
@@ -43,7 +44,7 @@ def show_account(request):
         print(request.POST)
         username=request.POST['username']
         password=request.POST['password']
-        print(username,password)
+    
         user=authenticate(username=username,password=password)
         print(user)
         if user:
