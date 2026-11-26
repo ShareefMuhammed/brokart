@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from django.shortcuts import render,redirect
 from .models import Order,OrderedItem
 from django.contrib import messages
@@ -91,10 +90,3 @@ def add_to_cart(request):
             ordered_item.quantity=ordered_item.quantity+quantity
             ordered_item.save()
     return redirect('cart')
-=======
-from django.shortcuts import render
-
-# Create your views here.
-def show_carts(request):
-    return render(request, 'cart.html')
->>>>>>> 47f48488ab9d220bc453ea1f9bde29fe7ebeac82
